@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Templates Test</title>
-</head>
-<body>
-
-</body>
-</html>
+{% extends 'views.html'%}
+{% block title %}This is test page{% endblock %}
+{% block content %}
+Wanna some test, {{username}}?
+{% endblock %}

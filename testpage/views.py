@@ -3,4 +3,5 @@ from django.shortcuts import render
 # Create your views here.
 
 def index(request):
-    return render(request, 'testpage/views.html')
+    username = request.session['username']
+    return render(request, 'testpage/views.html' , {'username':username})

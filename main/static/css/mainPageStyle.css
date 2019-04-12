@@ -1,0 +1,94 @@
+    html, body{
+        width: 100%;
+        height: 100%;
+        margin:0;
+	}
+	a{
+	    display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+	}
+	.header{
+		position: fixed;
+		height: 75px;
+		background: #3D9DE2;
+		border: 1px solid black;
+		width:100%;
+	}
+	.logo{
+	position: fixed;
+    font-size: 30px;
+    top: -12px;
+    right: 50%;
+	}
+	.round{
+		position: fixed;
+		z-index:1;
+		width: 50px;
+		height: 50px;
+		border: 1px solid;
+		background: #83A7C9;
+		border-radius: 50%;
+		right:10px;
+		margin-top: 12px;
+	}
+	.avatar:hover > p{
+		background:#79848e;
+	}
+
+	.avatar{
+		position: fixed;
+		right: 10px;
+		z-index: 10;
+		width: 52px;
+		height: 72px;
+	}
+	.triangle{
+		position: fixed;
+		z-index: -1;
+		top: 69px;
+		right: 21px;
+		height: 30px;
+		width: 30px;
+		background: grey;
+		/* border: 2px solid; */
+		-moz-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		-o-transform: rotate(45deg);
+		transform: rotate(45deg);
+	}
+	.settings{
+		display: none;
+		position: fixed;
+		right: 4px;
+		z-index: 2;
+		top: 80px;
+		width: 60px;
+		height: max-content;
+		text-align: center;
+		background-color: grey;
+		border: 2px solid;
+	}
+	.avatar:hover > .settings{
+		display: block;
+	}
+	.wrapper{
+	    height: 100%;
+		padding-top: 83px;
+	}
+	.login-form{
+	    border: 1px solid black;
+        width: 400px;
+        margin-left: 42vw;
+        margin-top: 30vh;
+        height: 400px;
+	}
+	.grid-wrapper{
+        height: 100%;
+	    display: grid;
+	    grid-template-rows: 1fr 1fr 1fr;
+	    grid-template-columns: 1fr;
+	}

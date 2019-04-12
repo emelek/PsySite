@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+	{% load static %}
+<link rel="shortcut icon" type="image/png" href="{% static 'main/favicon.ico' %}">
+<link rel="stylesheet" href="{% static 'css/mainPageStyle.css' %}">
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+	{% block head %}{% endblock %}
+</head>
+<body>
+	<header>
+		<div class="header"></div>
+		<div class="logo"><p>ПСИХАЧ</p></div>
+		<div class="avatar">
+				{% load static %}
+			<img src="{% static 'main/pepe.jpg' %}" class="round"></img>
+			<div class="settings">
+				<div class="triangle"></div>
+				<a href="/">Main</a>
+				<a href="/login">User</a>
+				<a href="/test">Test</a>
+				<a href="/login">Login</a>
+			</div>
+		</div>
+	</header>
+	<div class="wrapper">
+		{%block content%}
+	{% for user in users %}
+		<p>{{user.name}}</p>
+	{% endfor %}
+		{%endblock%}
+	</div>
+</body>
+</html>

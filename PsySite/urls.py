@@ -22,4 +22,5 @@ urlpatterns = [
     path('test/', include('testpage.urls')),
     path('login/', include('login.urls')),
     path('', include('main.urls')),
+    path('nindeka/', include('nindeka.urls')),
 ]

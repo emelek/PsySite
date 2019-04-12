@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Nindeco - Программное обеспечение для web.</title>
 <style>
 html, body {
 height: 100%;
@@ -93,6 +93,8 @@ text-align: left;
 
 }
 </style>
+	{% load static %}
+<link rel="shortcut icon" type="image/png" href="{% static 'main/favicon.ico' %}">
 </head>
 <body>
 <div>
@@ -114,7 +116,8 @@ text-align: left;
 		</div>
 		<div style="background: blue;">
 			<div>
-				<img src="white-logo-cut2.svg"></img>
+
+				<img src="{% static 'nindeka/logo.svg' %}"></img>
 				<p style ="font-size:20px; color: white;">Программное обеспечение для web.</p>
 				
 				<p style ="color: white;">Мы проектируем, внедряем и поддерживаем:</p>
